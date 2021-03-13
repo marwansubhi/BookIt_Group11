@@ -23,8 +23,6 @@ public class test {
         dbuObject.runQuery("select count(*) from users");
         String countUsers = dbuObject.getFirstRowFirstColumn();
         String expectedUsers = "1987";
-
-        //   Assert.assertEquals();
         System.out.println(countUsers);
         dbuObject.destroy();
     }
