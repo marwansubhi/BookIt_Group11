@@ -34,7 +34,6 @@ public class test {
 
         dbuObject.createConnection();
         dbuObject.runQuery("SELECT  email FROM users WHERE full_name = 'john hanna'");
-
         String actualResult = dbuObject.getFirstRowFirstColumn();
 
         String expectedEmail = "john.hanna@gmail.com";
